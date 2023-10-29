@@ -7,13 +7,7 @@ export const MyComponent = () => {
     const [currentDate, setCurrentDate] = useState(new Date());
     setTimeout(() => {
         setCurrentDate(new Date());
-    }, 999);
+    }, 1000);
 
-    const currentTime = getTimeFromDate(currentDate);
-
-    return (
-        <div>
-            {String(date)},{currentTime}
-        </div>
-    );
+    return <div>{String(date)}</div>;
 };
